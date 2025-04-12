@@ -1,0 +1,4 @@
+PROC write.string(CHAN output, VALUE string[]) =
+    SEQ character_number = [1 FOR string[BYTE 0]]
+        output ! string[BYTE character_number]
+write.string(terminal.screen, "The story begins. Choose strength, agility, constitution, intelligence, wisdom, charisma.")
